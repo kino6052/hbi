@@ -1,6 +1,8 @@
 use Rack::Static,
   :urls => ["/bootstrap", "/imgs", "/js", "/css"],
   :root => "public"
+  
+use Rack::Favicon
 
 run lambda { |env|
   [
